@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    *{
+      box-sizing: border-box;
+      background-color:#fff;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .contact-section {
+      padding: 50px 20px;
+      background-color: #fff;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .contact-box {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-form h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    .contact-form p {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .contact-form button {
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+
+    .submit-button {
+      background-color:#007BFF
+    }
+  </style>
+</head>
+<body>
+  <!--Contact Section-->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/movkjbwr" method="POST">
+              <h1>Contact Me</h1>
+              <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            </form>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
